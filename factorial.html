@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h3>Factorial Calculator</h3>
+  <input id="n" type="number" placeholder="Enter number">
+  <button onclick="f()">Find</button>
+  <p id="r"></p>
+
+  <script>
+    function f(){
+      let n = +document.getElementById("n").value, fact=1;
+      for(let i=1;i<=n;i++) fact*=i;
+      document.getElementById("r").innerHTML="Factorial = "+fact;
+    }
+  </script>
+</body>
+</html>
