@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <input id="n" placeholder="Enter number">
+  <button onclick="check()">Check</button>
+  <p id="r"></p>
+
+  <script>
+    function check() {
+      let n = document.getElementById("n").value;
+      document.getElementById("r").innerHTML =
+        (n % 7 == 0) ? n + " is a multiple of 7" : n + " is not a multiple of 7";
+    }
+  </script>
+</body>
+</html>
